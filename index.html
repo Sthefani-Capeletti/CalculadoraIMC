@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/fontawesome.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-content wrapper-nav">
+            <a href="" class="navbar-logo">IMC</a>
+            <ul class="navbar-items">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#tabela" class="nav-link">Tabela</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#calcular" class="nav-link">Calcular</a>
+                </li>
+            </ul>
+            <div class="navbar-button">
+                <div class="button"></div>
+            </div>
+        </div>
+    </nav>
+    <div class="home section-100 bg-white opacity-controller" id="home">
+        <div class="home-flex wrapper">
+            <div class="home-text">
+                <h2 class="color-black toUpper">Índice de Massa Corporal</h2>
+                <p>O índice de massa corporal é uma medida internacional usada para calcular se uma pessoa está no peso ideal.</p>
+                <a href="#calcular" class="home-button">Calcule já</a>
+            </div>
+            <div class="home-img">
+                <img src="assets/img/undraw_personal_trainer_re_cnua.svg" title="Undraw" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+    <div class="sobre section-50 bg-black opacity-controller" id="sobre">
+        <div class="wrapper">
+            <div class="sobre-text">
+                <h2 class="color-white toUpper">Sobre o IMC</h2>
+                <p class="color-white">
+                    Índice de Massa Corporal, o IMC é uma fórmula utilizada por vários profissionais de saúde, 
+                    incluindo médicos, enfermeiros e nutricionistas, para saber, 
+                    de uma forma rápida, se a pessoa precisa ganhar ou perder peso.
+                </p>
+                <div class="sobre-icons-list">
+                    <div class="icon">
+                        <i class="fa-solid fa-notes-medical sobre-icon"></i>
+                        <p>Lorem, ipsum.</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-weight-scale sobre-icon"></i>
+                        <p>Lorem, ipsum.</p>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-star-of-life sobre-icon"></i>
+                        <p>Lorem, ipsum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tabela section-50 bg-white opacity-controller" id="tabela">
+        <div class="wrapper">
+            <h2 class="color-black toUpper">Tabela Imc</h2>
+            <p>Você pode utilizar a tabela abaixo para consultar o seu Índice de Massa Corporal.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resultado</th>
+                        <th>Situação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Menor que 18.5</td>
+                        <td>Abaixo do peso</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 18.5 e 24.9</td>
+                        <td>Peso normal</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 25.0 e 29.9</td>
+                        <td>Pré-obesidade</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 30.0 e 34.9</td>
+                        <td>Obesidade Grau 1</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 35.0 e 39.9</td>
+                        <td>Obesidade Grau 2</td>
+                    </tr>
+                    <tr>
+                        <td>Acima de 40</td>
+                        <td>Obesidade Grau 3</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="https://pt.wikipedia.org/wiki/%C3%8Dndice_de_massa_corporal" class="tabela-saiba-mais"
+            target="_blank">Saiba mais sobre a tabela aqui...</a>
+        </div>
+    </div>
+
+    <div class="calcular section-75 bg-grey opacity-controller" id="calcular">
+        <div class="calcular-flex wrapper">
+            <div class="calcular-form">
+                <h2 class="color-black toUpper">Calcular IMC</h2>
+                <input type="text" placeholder="Peso (KG)" id="peso">
+                <input type="text" placeholder="Altura (M)" id="altura">
+
+                <div class="calcular-resultado"></div>
+
+                <button class="form-btn" id="form-btn">Calcular</button>
+            </div>
+            <div class="calcular-img">
+                <img src="assets/img/undraw_personal_training_0dqn.svg" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer section-25 bg-black opacity-controller">
+        <div class="footer-p1 wrapper">
+            <a href="" class="footer-brand">IMC</a>
+            <div class="social-media">
+                <i class="fa-brands fa-square-facebook social-media-icon"></i>
+                <i class="fa-brands fa-square-twitter social-media-icon"></i>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-p2 wrapper">
+            <div class="footer-copy">
+                &copy;IMC
+            </div>
+            <a href="#home" class="footer-btn">Ir ao topo</a>
+            
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
