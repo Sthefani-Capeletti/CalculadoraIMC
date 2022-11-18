@@ -649,5 +649,16 @@ tbody tr:hover td{
     .calcular-form button{
         width: 100%;
     }
+    thead tr th{
+        padding-inline: 0;
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+        text-align: center;
+    }
+    
+    tbody tr td{
+        padding-inline: 0;
+        text-align: center;
+    }
     
 }
